@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 模型文件 (较大，建议通过训练生成)
+*.pth
+*.bin
+*.h5
+
+# 结果文件
+result.xlsx
+predictions.xlsx
+*.xlsx
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 数据文件 (可选 — 如需版本控制数据请移除此项)
+# data/
