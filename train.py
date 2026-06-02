@@ -199,7 +199,8 @@ def main():
                         help='随机种子')
 
     # 输出参数
-    parser.add_argument('--save_path', type=str, default='rumor_detection_model.pth',
+    parser.add_argument('--save_path', type=str,
+                        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rumor_detection_model.pth'),
                         help='模型保存路径')
     parser.add_argument('--bert_model', type=str, default='bert-base-chinese',
                         help='BERT预训练模型名称')

@@ -107,7 +107,8 @@ def main():
                         help='输入文件路径 (CSV/Excel/TXT)')
     parser.add_argument('--output', type=str, default='predictions.xlsx',
                         help='输出结果文件路径 (默认: predictions.xlsx)')
-    parser.add_argument('--model_path', type=str, default='rumor_detection_model.pth',
+    parser.add_argument('--model_path', type=str,
+                        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rumor_detection_model.pth'),
                         help='训练好的模型路径')
     parser.add_argument('--bert_model', type=str, default='bert-base-chinese',
                         help='BERT模型名称')
